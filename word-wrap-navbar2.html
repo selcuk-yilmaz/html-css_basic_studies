@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      div {
+        display: inline-block;
+        width: 200px;
+        background-color: #555;
+        border: 2px solid red;
+      }
+      div a {
+        width: 200px;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        padding: 15px;
+        display: inline-block;
+        border: 2px solid blue;
+      }
+      ul {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        border: 2px solid pink;
+      }
+      ul li {
+        display: inline-block;
+      }
+      ul li:hover {
+        background: rgb(179, 13, 13);
+      }
+      ul li:hover ul {
+        /* display: block; */
+      }
+
+      ul li ul {
+        position: absolute;
+        width: 200px;
+        display: none;
+        border: 2px solid brown;
+      }
+      ul li ul li {
+        background: #555;
+        display: block;
+      }
+      ul li ul li a {
+        display: block !important;
+        color: black;
+        background-color: white;
+      }
+      ul li ul li:hover {
+        background: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li>
+          <a href="#">ÜRÜNLER</a>
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

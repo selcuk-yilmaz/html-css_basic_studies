@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div ul li:first-child{
+            list-style-type: none;
+            background-color: gray;
+            display: inline-block;
+            text-align: center;
+        }
+        div ul li{
+            /* display: inline-block; */
+            border: 2px solid black;
+            width: 8rem;
+            height: 2rem;
+            line-height: 2rem;
+            list-style-position: inside;
+            background-color: rgb(228,223,223);
+        }
+        a{
+            text-decoration: none;
+            
+        }
+        div ul li:nth-child(1) ~ li{
+            display: none;
+        }
+        div ul li:nth-child(1):hover ~ li{
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li> <a href="">ürünler</a> </li>
+            <li> <a href="">notebook</a> </li>
+            <li> <a href="">klavye</a></li>
+            <li> <a href="">fare</a> </li>
+            <li> <a href="">monitör</a> </li>
+        </ul>
+    </div>
+</body>
+</html>
